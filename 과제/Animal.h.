@@ -13,7 +13,7 @@ class Dog : public Animal {
 
 public:
 	virtual void makeSound() {
-		cout << "°³°¡ Â¢´Â ¼Ò¸®°¡ µé¸³´Ï´Ù." << endl << "Woof!" << endl;
+		cout << "ê°œê°€ ì§–ëŠ” ì†Œë¦¬ê°€ ë“¤ë¦½ë‹ˆë‹¤." << endl << "Woof!" << endl;
 	}
 };
 
@@ -21,7 +21,7 @@ class Cat : public Animal {
 
 public:
 	virtual void makeSound() {
-		cout << "°í¾çÀÌ°¡ ¿ì´Âµí ÇÕ´Ï´Ù." << endl << "Meow!" << endl;
+		cout << "ê³ ì–‘ì´ê°€ ìš°ëŠ”ë“¯ í•©ë‹ˆë‹¤." << endl << "Meow!" << endl;
 	}
 
 };
@@ -30,7 +30,7 @@ class Cow : public Animal {
 
 public:
 	virtual void makeSound() {
-		cout << "¼Ò°¡ ¿ï°íÀÖ½À´Ï´Ù." << endl << "Moo!" << endl;
+		cout << "ì†Œê°€ ìš¸ê³ ìžˆìŠµë‹ˆë‹¤." << endl << "Moo!" << endl;
 	}
 
 };
