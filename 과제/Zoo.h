@@ -20,7 +20,7 @@ public:
 	}
 
 	~Zoo() {
-		cout << endl << "Zoo �Ҹ��� �θ�";
+		cout << endl << "Zoo ¼Ò¸êÀÚ ºÎ¸§";
 		for (int i = 0; i < 10; i++) {
 			if (animals[i] != nullptr) {
 				delete animals[i];
