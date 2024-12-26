@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int sum(int a[],int size)   //´õÇÏ±â ÇÔ¼ö
+int sum(int a[],int size)   //ë”í•˜ê¸° í•¨ìˆ˜
 { 
 	
 	int all = 0;
@@ -13,18 +13,18 @@ int sum(int a[],int size)   //´õÇÏ±â ÇÔ¼ö
 
 	return all;
 }
-double avg(int b,int size)   //Æò±Õ ÇÔ¼ö
+double avg(int b,int size)   //í‰ê·  í•¨ìˆ˜
 {
-	return (double)b / size; //¼Ò¼öÁ¡ ÀÌÇÏ¸¦ Ç¥ÇöÇÏ±â À§ÇÑ (double) »ğÀÔ
+	return (double)b / size; //ì†Œìˆ˜ì  ì´í•˜ë¥¼ í‘œí˜„í•˜ê¸° ìœ„í•œ (double) ì‚½ì…
 }
 
-int bubble(int a[], int size) //¹öºíÁ¤·Ä ÇÔ¼ö
+int bubble(int a[], int size) //ë²„ë¸”ì •ë ¬ í•¨ìˆ˜
 {
 	int select = 0;
 	int temp = 0;
-	while (select != 3) {     //Àç»ç¿ë
+	while (select != 3) {     //ì¬ì‚¬ìš©
 
-		cout << endl << "1 ¹øÀº ¿À¸§Â÷¼ø, 2 ¹øÀº ³»¸²Â÷¼ø, 3¹øÀº ³¡³»±â :";
+		cout << endl << "1 ë²ˆì€ ì˜¤ë¦„ì°¨ìˆœ, 2 ë²ˆì€ ë‚´ë¦¼ì°¨ìˆœ, 3ë²ˆì€ ëë‚´ê¸° :";
 
 		cin >> select;
 
@@ -50,8 +50,8 @@ int bubble(int a[], int size) //¹öºíÁ¤·Ä ÇÔ¼ö
 				}
 			}
 		}
-		else if (select == 3) { cout << "°á°ú¸¦ ÇÑ¹ø ´õ º¸¿©µå¸®°í ³¡³»°Ú½À´Ï´Ù."; }
-		else { cout << "Æ²¸° ÀÔ·ÂÀÔ´Ï´Ù. ÇöÀç ¹è¿­ÀÇ »óÅÂÀÔ´Ï´Ù."; }
+		else if (select == 3) { cout << "ê²°ê³¼ë¥¼ í•œë²ˆ ë” ë³´ì—¬ë“œë¦¬ê³  ëë‚´ê² ìŠµë‹ˆë‹¤."; }
+		else { cout << "í‹€ë¦° ì…ë ¥ì…ë‹ˆë‹¤. í˜„ì¬ ë°°ì—´ì˜ ìƒíƒœì…ë‹ˆë‹¤."; }
 
 		for (int i = 0; i < size; i++) {
 			cout << endl << a[i];
@@ -65,14 +65,14 @@ int main() {
 	while (k != 2) 
 	{
 		int size = 0;
-		cout << "Å©±â¸¦ Á¤ÇÏ¼¼¿ä : ";
+		cout << "í¬ê¸°ë¥¼ ì •í•˜ì„¸ìš” : ";
 		cin >> size;
-		if (size <= 0) cout << "°ªÀÌ ¼º¸³ÇÒ ¼ö ¾ø½À´Ï´Ù.";
+		if (size <= 0) cout << "ê°’ì´ ì„±ë¦½í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 		else {
 			int* score = new int[size] {0};
 
 			for (int i = 0; i < size; i++) {
-				cout << i + 1 << "¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä";
+				cout << i + 1 << "ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”";
 				cin >> score[i];
 				cout << endl;
 			}
@@ -81,9 +81,9 @@ int main() {
 
 			bubble(score, size);
 
-			delete score; //µ¿ÀûÇÒ´ç Á¦°Å
+			delete score; //ë™ì í• ë‹¹ ì œê±°
 		}
-		cout <<endl << "°ªÀ» ¹Ù²Ù·Á¸é 1¹ø, ³¡³»·Á¸é 2¹øÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä:";
+		cout <<endl << "ê°’ì„ ë°”ê¾¸ë ¤ë©´ 1ë²ˆ, ëë‚´ë ¤ë©´ 2ë²ˆì„ ì…ë ¥í•´ì£¼ì„¸ìš”:";
 		cin >> k;
 
 	}
