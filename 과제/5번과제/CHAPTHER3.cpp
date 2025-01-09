@@ -1,3 +1,5 @@
+// 저장할때 utf-8로 인코딩이 되어있는지 확인할것. 아니면 언리얼에서 컴파일이 안됨
+
 #include "MyActor.h"
 #include "Math/UnrealMathUtility.h"
 #include "Containers/Array.h"
