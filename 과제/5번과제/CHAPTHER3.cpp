@@ -17,7 +17,7 @@ void AMyActor::BeginPlay()
 	Super::BeginPlay();
 	move();
 	UE_LOG(LogTemp, Warning, TEXT("총 이동 거리는 : %f 입니다"), totalDist);
-	UE_LOG(LogTemp, Warning, TEXT("총 이동 발생 횟수는 : %f 입니다"), eventCount);
+	UE_LOG(LogTemp, Warning, TEXT("총 이동 발생 횟수는 : %d 입니다"), eventCount);
 }
 
 int32 AMyActor::step()
