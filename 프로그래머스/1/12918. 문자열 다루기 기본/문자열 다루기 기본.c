@@ -4,9 +4,7 @@
 
 bool solution(const char* s) {
     bool answer = true;
-    int check = strlen(s);
-    if(check == 4 || check == 6);
-    else answer = false;
+    answer = (strlen(s) == 4 || strlen(s) == 6);
     for(int i = 0; i < strlen(s); i++){
         if((int)s[i] >= 65) answer = false;
     }
