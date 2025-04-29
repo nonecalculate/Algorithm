@@ -7,7 +7,7 @@ int main() {
 	int n;
 	cin >> n ;
 	vector<int> list;
-	int m[100000];
+	int m[n];
 	for (int i = 0; i < n; i++)
 	{
 		int k = 0;
