@@ -6,13 +6,11 @@ using namespace std;
 int main() {
 	int n;
 	cin >> n ;
-	vector<int> list;
+	vector<int> list(n);
 	int m[n];
 	for (int i = 0; i < n; i++)
 	{
-		int k = 0;
-		cin >> k;
-		list.push_back(k);	
+		cin >> list[i];
 	}
 	m[0] = list[0];
 	int answer = m[0];
