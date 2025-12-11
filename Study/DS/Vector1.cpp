@@ -13,3 +13,5 @@ int main() {
 		v.push_back(i);
 	}
 }
+
+//capacity 증가 실험
