@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
 	vector<int> v;
-	v.reserve(0);
+	v.reserve(0); //reserve() 는 Capacity를 조절하는 구문이다.
 	for (int i = 0; i < 100; i++)
 	{
 		cout << "i= " << i
